@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+	<table class="w3-table-all">
+		{% for user in ulist %}
+		<tr>
+			<td>{{ user['id'] }}</td>
+			<td>{{ user['name'] }}</td>
+			<td>{{ user['username'] }}</td>
+			<td>{{ user['psssword'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
